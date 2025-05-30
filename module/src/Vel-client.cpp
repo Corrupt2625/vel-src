@@ -41,8 +41,8 @@ bool InjectDLL(DWORD pid, const wchar_t* dllPath) {
     return hThread != nullptr;
 }
 
-int wmain() {
-    const wchar_t* dllPath = L"C:\\Users\\Raida\\source\\repos\\VelDLL\\x64\\Debug\\VelDLL.dll";
+int main() {
+    const wchar_t* dllPath = L"C:\\path\\VelDLL.dll"; //blinx you can handle this
     const wchar_t* targetProcess = L"RobloxPlayerBeta.exe";
 
     DWORD pid = GetProcessIdByName(targetProcess);
