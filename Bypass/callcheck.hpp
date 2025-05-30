@@ -1,17 +1,8 @@
 #pragma once
-#import <iostream>
-#import <unordered_map>
+#include <iostream>
+#include <unordered_map>
+#include <Windows.h>
+#include <string>
+#include <cstdint>
 
-class state(){
-  private:
-    uintptr_t rbxstate
-  public:
-    uintptr_t return_state(){
-      return rbxstate();
-    }
-    void set_state(uintptr_t rbx){
-      rbx=rbx;
-    }
-}
-
-void CALLCHECK_INSTANTIATED(state rbx);
+void disCallCheck();
