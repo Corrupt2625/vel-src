@@ -6,7 +6,7 @@ DWORD OGcall;
 DWORD fallbck;
 DWORD Arith;
 
-__declspec(dllimport) void HookFUNC()
+__declspec(naked) void HookFUNC()
 {
     __asm {
         mov eax, [esp]
