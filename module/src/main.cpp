@@ -2,7 +2,7 @@
 #include <windows.h>
 #include <iostream>
 
-#pragma comment(lib, "libMinHook64x.lib")
+#pragma comment(lib, "libMinHook.x64.lib")
 #pragma comment(linker, "\"/manifestdependency:type='win32' \ name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \ processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
 DWORD_PTR FindPattern(const char* pattern, const char* mask, DWORD_PTR base, size_t size) {
