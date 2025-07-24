@@ -9,17 +9,17 @@ DWORD Arith;
 __declspec(naked) void HookFUNC()
 {
     __asm {
-        mov eax, [esp];
-        cmp eax, Arith;
-        jne normal_case;
+        mov eax, [esp]
+        cmp eax, Arith
+        jne normal_case
 
-        add esp, 4;
-        call [OGcall];
-        add esp, 4;
-        retn;
+        add esp, 4
+        call [OGcall]
+        add esp, 4
+        retn
 
     normal_case:
-        jmp [fallbck];
+        jmp [fallbck]
     }
 }
 
